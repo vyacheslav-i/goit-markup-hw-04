@@ -286,6 +286,16 @@ color: var(--primary-text-color-theme-light);
     width: 270px;
 }
 
+.thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
 .feature-title {
     margin-bottom: 10px;
 }
