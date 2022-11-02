@@ -199,8 +199,9 @@ img {
 /* HERO */
 
 .hero {
-    background-color: var(--secondary-background-color);
+    background: rgba(47, 48, 58, 0.4);
     text-align: center;
+    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, var(--overlay-color), var(--overlay-color)), url(../images/hero.jpg);
@@ -466,6 +467,10 @@ color: var(--primary-text-color-theme-light);
 
 .contact-footer {
     margin-top: 9px;
+}
+
+.contact-footer .contact-email,
+.contact-footer .contact-phone {
     color: var(--third-text-color-theme-dark);
 }
 
@@ -473,6 +478,11 @@ color: var(--primary-text-color-theme-light);
 
 .footer-socials {
     display: block;
+}
+
+.footer-socials .section-title {
+    display: block;
+    text-align: left;
 }
 
 .footer-socials .section-title {
