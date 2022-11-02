@@ -168,6 +168,7 @@ img {
 .contact-item .contact-phone {
     padding-top: 32px;
     padding-bottom: 32px;
+    color: var(--secondary-text-color-theme-light);
 }
 
 .contact-item:not(:last-child) {
@@ -177,7 +178,9 @@ img {
 .contact-email,
 .contact-phone {
     color: var(--secondary-text-color-theme-light);
-    display: block;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .adress-city:hover,
@@ -363,6 +366,8 @@ color: var(--primary-text-color-theme-light);
     color: var(--secondary-text-color-theme-light)
 }
 
+/* SOCIALS */
+
 .socials {
     display: flex;
     justify-content: center;
@@ -427,11 +432,17 @@ color: var(--primary-text-color-theme-light);
 }
 
 /* FOOTER */
-.page-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
     background-color: var(--secondary-background-color);
+}
+
+.footer .container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
 }
 
 .logo-footer {
@@ -464,8 +475,27 @@ color: var(--primary-text-color-theme-light);
     display: block;
 }
 
+.footer-socials .section-title {
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
 .socials {
     margin-top: 20px;
+}
+
+.footer-socials .socials-link {
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.footer-socials .socials-link:hover,
+.footer-socials .socials-link:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: var(--accent-color);
 }
 
 /* ==================================== */
@@ -506,6 +536,11 @@ color: var(--primary-text-color-theme-light);
     flex-wrap: wrap;
     gap: 30px;
 }
+
+.site:hover,
+.site:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}   
 
 .site-container {
     border-right: 1px solid #EEEEEE;
